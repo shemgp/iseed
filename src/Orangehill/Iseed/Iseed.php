@@ -3,8 +3,8 @@
 namespace Orangehill\Iseed;
 
 use Illuminate\Filesystem\Filesystem;
-use Illuminate\Support\Composer;
-use Illuminate\Support\Facades\Config;
+use Illuminate\Foundation\Composer;
+use Illuminate\Foundation\Facades\Config;
 
 class Iseed
 {

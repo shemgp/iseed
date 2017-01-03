@@ -2134,7 +2134,7 @@ class IseedTest extends PHPUnit_Framework_TestCase
     public function testCanGenerateSeed()
     {
         $file = m::mock('Illuminate\Filesystem\Filesystem')->makePartial();
-        $composer = m::mock('Illuminate\Support\Composer', array($file))->makePartial();
+        $composer = m::mock('Illuminate\Foundation\Composer', array($file))->makePartial();
         $mocked = m::mock('Orangehill\Iseed\Iseed', array($file, $composer))->makePartial();
         $mocked->shouldReceive('readStubFile')
             ->once()
